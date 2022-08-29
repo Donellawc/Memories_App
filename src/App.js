@@ -4,7 +4,7 @@ import { Container } from '@material-ui/core';
 
 import Home from './components/Home/Home';
 import Navbar from './components/Navbar/Navbar';
-// import Auth from './components/Auth/Auth';
+ import Auth from './components/Auth/Auth';
 
 const App = () => (
   <BrowserRouter>
