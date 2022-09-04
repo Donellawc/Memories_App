@@ -8,7 +8,7 @@ import memories from '../../images/camera.png';
 import * as actionType from '../../constants/actionTypes';
 import useStyles from './styles';
 
-const Navbar = () => {
+function Navbar ()  {
   const [user, setUser] = useState(JSON.parse(localStorage.getItem('profile')));
   const dispatch = useDispatch();
   const location = useLocation();

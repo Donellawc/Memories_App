@@ -1,8 +1,11 @@
-export const CREATE = 'CREATE';
-export const UPDATE = 'UPDATE';
-export const DELETE = 'DELETE';
-export const FETCH_ALL = 'FETCH_ALL';
-export const LIKE = 'LIKE';
+const CREATE = 'CREATE';
+const UPDATE = 'UPDATE';
+const DELETE = 'DELETE';
+const FETCH_ALL = 'FETCH_ALL';
+const LIKE = 'LIKE';
+const AUTH = 'AUTH';
+const LOGOUT = 'LOGOUT';
 
-export const AUTH = 'AUTH';
-export const LOGOUT = 'LOGOUT';
+
+
+// module.exports; {CREATE, UPDATE, DELETE, FETCH_ALL, LIKE, AUTH, LOGOUT}
