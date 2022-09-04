@@ -6,7 +6,7 @@ import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 import ThumbUpAltOutlined from '@material-ui/icons/ThumbUpAltOutlined';
 import { useDispatch } from 'react-redux';
 import moment from 'moment';
- import { useHistory } from 'react-router-dom';
+ import { useNavigate } from 'react-router-dom';
 import { getPost,likePost, deletePost } from '../../../actions/posts';
 import useStyles from './styles';
 
@@ -15,7 +15,7 @@ const Post = ({ post, setCurrentId }) => {
   const dispatch = useDispatch();
   const classes = useStyles();
   const user = JSON.parse(localStorage.getItem('profile'));
-  const history = useHistory();
+  const navigate = useNavigate();
   
   const Likes = () => {
     if (post.likes.length > 0) {
@@ -30,9 +30,9 @@ const Post = ({ post, setCurrentId }) => {
     return <><ThumbUpAltOutlined fontSize="small" />&nbsp;Like</>;
   };
   const openPost = (e) => {
-    dispatch(getPost(post._id, history));
+    dispatch(getPost(post._id, navigate));
 
-    history.push(`/posts/${post._id}`);
+    navigate.push(`/posts/${post._id}`);
   };
   return (
     <Card className={classes.card} raised elevation={6}>
