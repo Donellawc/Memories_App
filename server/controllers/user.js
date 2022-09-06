@@ -1,9 +1,9 @@
-import bcrypt from "bcryptjs";
-import jwt from  'jsonwebtoken';
+const bcrypt = ('bcryptjs');
+const jwt = ('jsonwebtoken');
 
-import UserModal from "../models/user.js";
+const UserModal = ("../models/user.js");
 
-const secret = 'test';
+const secret = ('test');
 
  const signin = async (req, res) => {
   const { email, password } = req.body;
