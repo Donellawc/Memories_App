@@ -1,7 +1,8 @@
-const express = ('express');
+const express = require('express');
 
-const { getPosts, getPostsBySearch, getPost, createPost, updatePost, likePost, commentPost, deletePost } = ('../controllers/posts.js');
-const auth = ("../middleware/auth.js");
+const { getPosts, getPostsBySearch, getPost, createPost, updatePost, likePost, commentPost, deletePost } = require('../controllers/posts.js');
+const auth = require("../middleware/auth.js");
+
 const router = express.Router();
 
 

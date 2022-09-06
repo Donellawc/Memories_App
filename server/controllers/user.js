@@ -1,7 +1,7 @@
-const bcrypt = ('bcryptjs');
-const jwt = ('jsonwebtoken');
+const bcrypt = require ('bcryptjs');
+const jwt =  require ('jsonwebtoken');
 
-const UserModal = ("../models/user.js");
+const UserModal =  require ("../models/user.js");
 
 const secret = ('test');
 

@@ -1,7 +1,7 @@
-const express = ('express')
-const mongoose =  ('mongoose')
+const express = require ("express");
+const mongoose =  require ("mongoose");
 
-const  PostMessage = ('../models/postMessage.js');
+const  PostMessage = require ('../models/postMessage.js');
 
 const router = express.Router();
 
