@@ -1,7 +1,7 @@
-import express from 'express';
-import mongoose from 'mongoose';
+const express = ('express')
+const mongoose =  ('mongoose')
 
-import PostMessage from '../models/postMessage.js';
+const  PostMessage = ('../models/postMessage.js');
 
 const router = express.Router();
 
@@ -77,4 +77,4 @@ const likePost = async (req, res) => {
 }
 
 
-module.exports ={router, getPosts, getPost, createPost, updatePost, deletePost, likePost};
+module.exports = {router, getPosts, getPost, createPost, updatePost, deletePost, likePost};
